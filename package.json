@@ -10,6 +10,9 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "core-js": "^2.6.5",
+    "scrollreveal": "^4.0.5",
+    "smooth-scroll": "^16.0.3",
+    "tippy.js": "^4.3.3",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3"
   },
