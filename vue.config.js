@@ -1,6 +1,6 @@
 module.exports = {
 	outputDir: 'docs',
-	publicPath: process.env.NODE_ENV === 'production' ? '/my-project/' : '/',
+	publicPath: process.env.NODE_ENV === 'production' ? '/sa-unity/' : '/',
 
 	pluginOptions: {
 		i18n: {
