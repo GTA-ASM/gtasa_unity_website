@@ -6,7 +6,7 @@ import Members from './views/Members.vue';
 Vue.use(Router);
 
 export default new Router({
-	mode: 'history',
+	mode: 'hash',
 	linkActiveClass: 'active',
 	linkExactActiveClass: 'active',
 	routes: [
