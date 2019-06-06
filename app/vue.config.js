@@ -1,6 +1,6 @@
 module.exports = {
-	outputDir: 'docs',
-	publicPath: process.env.NODE_ENV === 'production' ? '/sa-unity/' : '/',
+	outputDir: '../dist',
+	publicPath: process.env.NODE_ENV === 'production' ? '/gta-asm.github.io/' : '/',
 
 	pluginOptions: {
 		i18n: {
