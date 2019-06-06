@@ -10,7 +10,7 @@
     <a href="https://gtaforums.com/topic/912395-san-andreas-unity/"> <img src="http://i.imgur.com/Fatp2jZ.png" width="50" height="30"></a>
     &nbsp;
     <a href="https://www.youtube.com/channel/UCsslP7vqD06AMh6JlEy0pkg"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/71px-YouTube_full-color_icon_%282017%29.svg.png" width="30" height="21"> </a>
-	<img alt="David" src="https://img.shields.io/david/peer/GTA-ASM/sa-unity.svg?style=flat-square">
+	<img alt="David (path)" src="https://img.shields.io/david/dev/GTA-ASM/sa-unity.svg?style=flat-square">
 </div>
 <br>
 

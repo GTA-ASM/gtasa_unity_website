@@ -1,3 +1,7 @@
 {
-	"messsage": "hola i18n !!"
+	"messsage": "hola i18n !!",
+	"menus": {
+		"home": "Inicio",
+		"members": "Equipo"
+	}
 }

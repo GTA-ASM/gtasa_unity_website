@@ -1,13 +1,23 @@
 <template>
-  <div id="app">
-	<Navbar></Navbar>
-    <router-view />
+  <div id="app" class="h-100">
+	<Navbar :locales="''"></Navbar>
+    <router-view class="pt-wrapper"/>
   </div>
 </template>
 <script>
 import Navbar from '@/components/Navbar.vue';
 export default {
-	components: [Navbar],
+	components: { 
+		'Navbar': Navbar,
+	},
+	data: function() {
+		return {
+			
+		};
+	},
+	methods: {
+
+	},
 };
 </script>
 
