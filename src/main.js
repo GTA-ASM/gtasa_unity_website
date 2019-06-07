@@ -4,6 +4,9 @@ import router from './router';
 
 import 'bootstrap';
 import i18n from './i18n';
+import MultiSelect from 'vue-multiselect';
+
+Vue.component('multiselect', MultiSelect);
 
 
 Vue.config.productionTip = false;

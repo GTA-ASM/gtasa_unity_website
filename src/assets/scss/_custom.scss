@@ -1,7 +1,31 @@
 .pt-wrapper{
 	padding-top: 5rem !important;
 }
+
 #app{
 	height: 100vh !important;
 	background-color: #292b2e !important;
 }
+
+.lang-select{
+	
+	min-width: -webkit-fit-content !important;
+	min-width: -moz-fit-content !important;
+	min-width: -ms-fit-content !important;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	
+	.lang-select {
+		min-width: fit-content !important;
+		max-width: 100% !important;
+	}
+
+ }
+
+ @media (min-width: 768px) { 
+	.lang-select {
+		max-width: 15% !important;
+		min-width: fit-content !important;
+	}
+  }
