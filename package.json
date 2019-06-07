@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-	"serve": "npm run lint && vue-cli-service serve",
-	"build": "vue-cli-service build && npm run deploy",
+    "serve": "npm run lint && vue-cli-service serve",
+    "build": "vue-cli-service build && npm run deploy",
     "deploy": "./scripts/deploy.sh",
     "lint": "vue-cli-service lint",
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/i18n/**/*.json'"

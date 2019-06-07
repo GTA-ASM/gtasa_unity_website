@@ -1,0 +1,12 @@
+dist
+public
+scripts
+src
+node_modules
+babel.config.js
+postcss.config.js
+vue.config.js
+package-lock.json
+package.json
+LICENSE
+README.md

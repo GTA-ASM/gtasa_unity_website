@@ -3,7 +3,6 @@
 set -e
 
 # Check if files in root
-cd ../
 
 # Exit if the directory isn't found.
 if (($?>0)); then
@@ -12,14 +11,14 @@ if (($?>0)); then
 fi
 
 for i in *; do
-    if ! grep -qxFe "$i" ./app/scripts/keeplist.txt; then
-        echo "Deleting: $i"
+    if ! grep -qxFe "$i" ./scripts/keeplist.txt; then
+        echo "Updating or deleteng: $i"
         # the next line is commented out.  Test it.  Then uncomment to removed the files
         rm -rf "$i"
     fi
 done
 
-#CHeck for Dist Folder and its contents
+#Check for Dist Folder and its contents
 if [ -d "./dist/" ];  then
 	if [ -z "$(ls -A ./dist/)" ]; then
 		echo "Dist folder is empty, skipping ..."

@@ -1,5 +1,5 @@
 module.exports = {
-	outputDir: '../dist',
+	outputDir: 'dist',
 	publicPath: process.env.NODE_ENV === 'production' ? '/gta-asm.github.io/' : '/',
 
 	pluginOptions: {
