@@ -45,7 +45,7 @@ export default {
 	methods: {
 		updateLocales() {
 			this.$root.$i18n.locale = this.currentLocale.lang;
-			if (localStorage.getItem('cookiePer') == true) {
+			if (JSON.parse(localStorage.getItem('cookiePer')) == true) {
 				localStorage.setItem('uLang', this.currentLocale.lang);
 			}
 		},
