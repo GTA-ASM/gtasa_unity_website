@@ -10,6 +10,9 @@ if (($?>0)); then
     exit
 fi
 
+# Format keeplist for reading
+echo "Formating Keep list ..."
+sed -i 's/[[:space:]]*$//' ./scripts/keeplist.txt 
 for i in *; do
     if ! grep -qxFe "$i" ./scripts/keeplist.txt; then
         echo "Updating or deleteng: $i"
