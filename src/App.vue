@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="h-100">
 	<Navbar :locales="localesRegistered" :locale="currentLocale"></Navbar>
-    <router-view class="pt-wrapper"/>
+    <router-view class="pt-wrapper h-100 w-100"/>
   </div>
 </template>
 <script>

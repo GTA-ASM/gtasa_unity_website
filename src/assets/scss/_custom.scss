@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+html, body {
+	font-family: 'Roboto', sans-serif !important;
+	background-color: #27292b !important;
+}
+
 .pt-wrapper{
 	padding-top: 5rem !important;
 }
 
 #app{
 	height: 100vh !important;
-	background-color: #292b2e !important;
 }
 
 .lang-select{
@@ -12,6 +18,36 @@
 	min-width: -webkit-fit-content !important;
 	min-width: -moz-fit-content !important;
 	min-width: -ms-fit-content !important;
+}
+
+hr.divider {
+    max-width: 4.25rem;
+    border-width: .3rem;
+	border-color: #007bff;
+	border-radius: 20%;
+}
+
+.find-out, .find-out a[href]:not([tabindex]), .find-out a[href]:not([tabindex]):hover{
+	border: none;
+	border-radius: 10rem;
+	color: white !important;
+}
+
+.navbar-sticky{
+	transition:500ms ease !important;
+	background:transparent !important;
+}
+
+.navbar-sticky.scrolled{
+	background: #000 !important;
+}
+
+div#welcome{
+	background-color: white;
+}
+
+.mb-wrapper {
+	margin-bottom: 35% !important;
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 

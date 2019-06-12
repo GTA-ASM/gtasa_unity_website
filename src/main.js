@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 
+import './assets/js/custom';
 import 'bootstrap';
 import i18n from './i18n';
 import MultiSelect from 'vue-multiselect';

@@ -1,19 +1,18 @@
 <template>
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+	<nav class="navbar navbar-sticky navbar-expand-md navbar-dark bg-dark sticky-top p-3 text-center">
 		<router-link :to="{name: 'home'}" class="navbar-brand">
-			<img src="../assets/img/unitylogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-			GTA SA UNITY
+			<img src="../assets/img/unitylogo.svg" width="30" height="30" class="d-inline-block align-top" alt="Unity LOGO">
 		</router-link>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav container-fluid">
+			<ul class="navbar-nav container">
 				<li class="nav-item">
-					<router-link :to="{name: 'home'}" class="nav-link">{{$t("menus.home")}}</router-link>
+					<router-link :to="{name: 'home'}" class="nav-link"><i class="fas fa-home"></i> {{$t('menus.home')}}</router-link>
 				</li>
 				<li class="nav-item">
-					<router-link :to="{name: 'members'}" class="nav-link">{{$t("menus.members")}}</router-link>
+					<router-link :to="{name: 'members'}" class="nav-link"><i class="fas fa-user-friends"></i> {{$t('menus.members')}}</router-link>
 				</li>
 			</ul>
 			<multiselect @input="updateLocales()" v-model="currentLocale" :block-keys="['Tab', 'Enter']" track-by="lang" label="name" placeholder="Select your language" :options="this.locales" :searchable="false" :allow-empty="false" class="lang-select">
