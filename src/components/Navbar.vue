@@ -1,7 +1,7 @@
 <template>
 	<nav class="navbar navbar-sticky navbar-expand-md navbar-dark bg-dark sticky-top p-3 text-center">
 		<router-link :to="{name: 'home'}" class="navbar-brand">
-			<img src="../assets/img/unitylogo.svg" width="30" height="30" class="d-inline-block align-top" alt="Unity LOGO">
+			<img src="../assets/img/unitylogo.svg" width="40" height="40" class="d-inline-block align-top" alt="Unity LOGO">
 		</router-link>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>

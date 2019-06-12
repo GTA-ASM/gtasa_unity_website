@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid h-100">
-	  <div class="row justify-content-center h-100 mb-wrapper">
+	  <div class="row justify-content-center h-100 masthead-wrapper" id="main">
 		  <div class="col-sm-12 col-md-10 text-center">
 			  <img src="https://i.imgur.com/aIojfPW.png" class="img-fluid top-reveal">
 			  <h1 class="text-uppercase text-white mt-3 right-reveal">
