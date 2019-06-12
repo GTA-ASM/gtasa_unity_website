@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="h-100">
 	<Navbar :locales="localesRegistered" :locale="currentLocale"></Navbar>
+	<a data-scroll href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
     <router-view class="pt-wrapper h-100 w-100"/>
   </div>
 </template>

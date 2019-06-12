@@ -22,7 +22,13 @@
 	  </div>
 	  <div class="row justify-content-center py-5" id="welcome">
 		  <div class="col-sm-12 text-center">
-			  <h3 class="text-uppercase">Welcome!</h3>
+			  <h2 class="text-uppercase">{{$t('page_messages.welcome_title')}}</h2>
+		  </div>
+		  <div class="col-sm-12 col-md-10 my-5">
+				<hr class="divider">
+				<p class="text-center">
+					{{$t('page_messages.welcomer')}}
+				</p>
 		  </div>
 	  </div>
   </div>

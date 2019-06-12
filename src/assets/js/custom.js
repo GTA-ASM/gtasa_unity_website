@@ -5,6 +5,14 @@ $(window).scroll(function() {
 	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
 
+$(window).scroll(function() {
+	if ($(this).scrollTop() >= 50) {       
+		$('#return-to-top').fadeIn(200);    
+	}
+	else {
+		$('#return-to-top').fadeOut(200);   
+	}
+});
 
 import SmoothScroll from 'smooth-scroll';
 
@@ -20,7 +28,7 @@ const SMscroll = new SmoothScroll('[data-scroll]', {
 	speedAsDuration: false, 
 	durationMax: 500, 
 	durationMin: 200, 
-	clip: true, 
+	clip: false, 
 
 	// Easing
 	easing: 'easeInOutCubic', 
