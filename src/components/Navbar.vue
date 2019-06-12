@@ -7,7 +7,7 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav container">
+			<ul class="navbar-nav container-fluid">
 				<li class="nav-item">
 					<router-link :to="{name: 'home'}" class="nav-link"><i class="fas fa-home"></i> {{$t('menus.home')}}</router-link>
 				</li>
