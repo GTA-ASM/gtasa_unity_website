@@ -30,6 +30,11 @@ export default {
 					flagCode: 'es',
 					name: 'Español',
 				},
+				{
+					lang: 'de',
+					flagCode: 'de',
+					name: 'Deutsch',
+				},
 			],
 		};
 	},
