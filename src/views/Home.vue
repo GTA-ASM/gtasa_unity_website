@@ -20,15 +20,29 @@
 			</a>
 		  </div>
 	  </div>
-	  <div class="row justify-content-center py-5" id="welcome">
+	  <div class="row justify-content-center py-5 bg-wt" id="welcome">
 		  <div class="col-sm-12 text-center top-reveal">
 			  <h2 class="text-uppercase">{{$t('page_messages.welcome_title')}}</h2>
+			  <hr class="divider top-reveal">
 		  </div>
 		  <div class="col-sm-12 col-md-10 my-5">
-				<hr class="divider top-reveal">
 				<p class="text-center right-reveal">
 					{{$t('page_messages.welcomer')}}
 				</p>
+		  </div>
+	  </div>
+	  <div class="row justify-content-center py-5 bg-bk shadow-lg" id="about">
+		  <div class="col-sm-12 text-center top-reveal">
+			  <h2 class="text-uppercase">{{$t('page_messages.about_title')}}</h2>
+			  <hr class="divider top-reveal">
+		  </div>
+		  <div class="col-sm-12 col-md-6 my-5 px-5">
+				<p class=" text-center text-md-left right-reveal">
+					{{$t('page_messages.about')}}
+				</p>
+		  </div>
+		  <div class="col-sm-12 col-md-6 my-3">
+			  <img src="https://cloud.githubusercontent.com/assets/557828/24571348/d964f098-1670-11e7-8759-0160dbf5bcb5.png" alt="Example Alpha Screenshot" class="img-fluid left-reveal">
 		  </div>
 	  </div>
   </div>
