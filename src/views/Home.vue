@@ -26,9 +26,9 @@
 			  <hr class="divider top-reveal">
 		  </div>
 		  <div class="col-sm-12 col-md-10 my-5">
-				<p class="text-center right-reveal">
+				<h5 class="text-center right-reveal">
 					{{$t('page_messages.welcomer')}}
-				</p>
+				</h5>
 		  </div>
 	  </div>
 	  <div class="row justify-content-center py-5 bg-bk" id="about">
@@ -37,9 +37,9 @@
 			  <hr class="divider top-reveal">
 		  </div>
 		  <div class="col-sm-12 col-md-6 my-5 px-5">
-				<p class=" text-center text-md-left right-reveal">
+				<h5 class=" text-center text-md-left right-reveal">
 					{{$t('page_messages.about')}}
-				</p>
+				</h5>
 		  </div>
 		  <div class="col-sm-12 col-md-6 my-3">
 			  <img src="https://cloud.githubusercontent.com/assets/557828/24571348/d964f098-1670-11e7-8759-0160dbf5bcb5.png" alt="Example Alpha Screenshot" class="img-fluid left-reveal">
@@ -50,31 +50,31 @@
 			  <h2 class="text-uppercase">{{$t('page_messages.gallery_title')}}</h2>
 			  <hr class="divider top-reveal">
 		  </div>
-		  <div class="col-sm-12 my-5">
-				<p class="text-center right-reveal">
+		  <div class="col-sm-10 my-5">
+				<h4 class="text-center right-reveal">
 					{{$t('page_messages.gallery.start')}}
-				</p>
-				<div class="container-fluid">
-					<div v-for="(row, index) in galleryBuilded" :key="'RowG'+index" class="row justify-content-center">
-						<div v-for="(item, index) in row" :key="'GalItem'+index" class="col-sm-12 col-md-3">
-							<img v-if="item.type == 'picture'" :src="item.source" :alt="item.alt" class="img-fluid">
-							<template v-else-if="item.type == 'video'">
-								<vue-plyr :options="{hideControls: true }" v-if="item.kind == 'embed'">
-									<video poster="https://www.rockstargames.com/sanandreas/desktops/wallpapers/1600x1200/SA_guntable1600x1200.jpg">
-										<source :src="item.source" type="video/mp4" size="720">
-									</video>
-								</vue-plyr>
-								<vue-plyr :options="{hideControls: true, hideYouTubeDOMError: true }" v-if="item.kind == 'youtube'">
-									<div class="plyr__video-embed">
-										<iframe :src="`${item.source}?iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1`"
-											allowfullscreen allowtransparency allow="autoplay">
-										</iframe>
-									</div>
-								</vue-plyr>
-							</template>
-						</div>
+				</h4>
+				<div v-for="(row, index) in galleryBuilded" :key="'RowG'+index" class="row justify-content-center my-4">
+					<div v-for="(item, index) in row" :key="'GalItem'+index" class="col-sm-12 col-md-6 my-2">
+						<img v-if="item.type == 'picture'" :src="item.source" :alt="item.alt" class="img-fluid">
+						<template v-else-if="item.type == 'video'">
+							<vue-plyr v-if="item.kind == 'embed'">
+								<video :poster="item.poster">
+									<source :src="item.source" type="video/mp4" size="720">
+								</video>
+							</vue-plyr>
+							<div class="embed-responsive embed-responsive-16by9" v-if="item.kind == 'youtube'">
+  								<iframe class="embed-responsive-item" :src="item.source" allowfullscreen></iframe>
+							</div>
+						</template>
 					</div>
 				</div>
+		  </div>
+		  <div class="col-sm-8 my-5">
+			<hr class="divider top-reveal">
+			<h4 class="text-center right-reveal">
+				{{$t('page_messages.gallery.end')}}
+			</h4>
 		  </div>
 	  </div>
   </div>
@@ -101,7 +101,7 @@ export default {
 	methods: {
 		buildGallery(galleryList) {
 			console.log('Gallery Build');
-			const chunkedItems = _.chunk(galleryList.items, 3);
+			const chunkedItems = _.chunk(galleryList.items, 2);
 			this.galleryBuilded = chunkedItems;
 		},
 	},

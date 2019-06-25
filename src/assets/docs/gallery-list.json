@@ -18,12 +18,14 @@
         {
             "type": "video",
             "source": "http://files.facepunch.com/ziks/2015/April/12/2015-04-12-2011-02.mp4",
-            "kind":"embed"
+            "kind":"embed",
+            "poster": "https://www.rockstargames.com/sanandreas/desktops/wallpapers/1600x1200/SA_guntable1600x1200.jpg"
         },
         {
             "type": "video",
             "source": "http://files.facepunch.com/layla/2015/April/06/2015-04-06_04-32-12.mp4",
-            "kind":"embed"
+            "kind":"embed",
+            "poster": "https://www.rockstargames.com/sanandreas/desktops/wallpapers/1600x1200/SA_guntable1600x1200.jpg"
         },
         {
             "type": "video",
@@ -38,6 +40,21 @@
         {
             "type":"video",
             "source":"https://www.youtube.com/embed/4DpdcawFjG4",
+            "kind":"youtube"
+        },
+        {
+            "type":"video",
+            "source": "https://www.youtube.com/embed/7mWs2SToElI",
+            "kind":"youtube"
+        },
+        {
+            "type":"video",
+            "source": "https://www.youtube.com/embed/-3GAjTSLUUg",
+            "kind":"youtube"
+        },
+        {
+            "type":"video",
+            "source": "https://www.youtube.com/embed/jGLslnAm4dE",
             "kind":"youtube"
         }
     ]
