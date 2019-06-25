@@ -11,6 +11,17 @@
 				<li class="nav-item">
 					<router-link :to="{name: 'home'}" class="nav-link"><i class="fas fa-home"></i> {{$t('menus.home')}}</router-link>
 				</li>
+				<li class="nav-item dropdown" v-if="areHome">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-list"></i>
+						{{$t('menus.content.title')}}
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" data-scroll href="#welcome">{{$t('menus.content.welcome')}}</a>
+						<a class="dropdown-item" data-scroll href="#about">{{$t('menus.content.about')}}</a>
+						<a class="dropdown-item" data-scroll href="#gallery">{{$t('menus.content.gallery')}}</a>
+					</div>
+				</li>
 				<li class="nav-item">
 					<router-link :to="{name: 'members'}" class="nav-link"><i class="fas fa-user-friends"></i> {{$t('menus.members')}}</router-link>
 				</li>
@@ -56,6 +67,9 @@ export default {
 				'flag-icon': true,
 				[`flag-icon-${this.currentLocale.flagCode}`] : true,
 			};
+		},
+		areHome: function() {
+			return this.$route.path === '/';
 		},
 	},
 };

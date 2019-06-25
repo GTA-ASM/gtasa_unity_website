@@ -3,16 +3,19 @@
 	<Navbar :locales="localesRegistered" :locale="currentLocale"></Navbar>
 	<a data-scroll href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
     <router-view class="h-100 w-100"/>
+	<Footer></Footer>
   </div>
 </template>
 <script>
 import Navbar from '@/components/Navbar.vue';
+import Footer from '@/components/Footer.vue';
 import Swal from 'sweetalert2/dist/sweetalert2';
 import _ from 'lodash';
 export default {
 	name: 'App',
 	components: { 
 		'Navbar': Navbar,
+		'Footer': Footer,
 	},
 	mounted: function() {
 		this.askCookieAllow();

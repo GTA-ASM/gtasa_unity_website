@@ -14,7 +14,19 @@
 	},
 	"menus": {
 		"home": "Home",
+		"content": {
+			"title": "Home Content",
+			"welcome": "Welcome",
+			"about": "About",
+			"gallery": "Gallery"
+		},
 		"members" : "Members",
-		"findout_btn": "Find out more"
+		"findout_btn": "Find out more",
+		"footer": {
+			"discord": "Join to our Discord !",
+			"github": "Visit the Github Repo !",
+			"youtube": "Visit our Youtube Channel !",
+			"legal": "GTA ASM does not represent Rockstar Games or any of its associates or franchises; does not distribute or promote the distribution of material outside the rules of distribution of games and / or Rockstar Games material."
+		}
 	}
 }
