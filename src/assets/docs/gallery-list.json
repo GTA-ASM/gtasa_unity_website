@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "type": "picture",
+            "source": "https://cloud.githubusercontent.com/assets/557828/24571348/d964f098-1670-11e7-8759-0160dbf5bcb5.png",
+            "alt": "Demo Alpha 1"
+        },
+        {
+            "type": "picture",
+            "source": "https://cloud.githubusercontent.com/assets/557828/24571349/d96b7c24-1670-11e7-997d-ae15913481f8.png",
+            "alt": "Demo Alpha 2 Menu"
+        },
+        {
+            "type": "picture",
+            "source": "https://camo.githubusercontent.com/625225a8ad4d5a79f5962aa107c6f912ba2ae73b/68747470733a2f2f692e696d6775722e636f6d2f48583937386d722e706e67",
+            "alt": "Demo Pause Menu"
+        },
+        {
+            "type": "video",
+            "source": "http://files.facepunch.com/ziks/2015/April/12/2015-04-12-2011-02.mp4",
+            "kind":"embed"
+        },
+        {
+            "type": "video",
+            "source": "http://files.facepunch.com/layla/2015/April/06/2015-04-06_04-32-12.mp4",
+            "kind":"embed"
+        },
+        {
+            "type": "video",
+            "source": "https://www.youtube.com/embed/_x0NZ1wsEdU",
+            "kind":"youtube"
+        },
+        {
+            "type":"video",
+            "source":"https://www.youtube.com/embed/8YaVLwE9UXw",
+            "kind":"youtube"
+        },
+        {
+            "type":"video",
+            "source":"https://www.youtube.com/embed/4DpdcawFjG4",
+            "kind":"youtube"
+        }
+    ]
+}
