@@ -25,6 +25,9 @@
 				<li class="nav-item">
 					<router-link :to="{name: 'members'}" class="nav-link"><i class="fas fa-user-friends"></i> {{$t('menus.members')}}</router-link>
 				</li>
+				<li class="nav-item">
+					<router-link :to="{name: 'contribute'}" class="nav-link"><i class="fas fa-hand-holding-heart"></i> {{$t('menus.contribute')}}</router-link>
+				</li>
 			</ul>
 			<multiselect @input="updateLocales()" v-model="currentLocale" :block-keys="['Tab', 'Enter']" track-by="lang" label="name" placeholder="Select your language" :options="this.locales" :searchable="false" :allow-empty="false" class="lang-select">
 				<template slot="singleLabel" slot-scope="props">

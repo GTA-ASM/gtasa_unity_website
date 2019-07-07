@@ -1,5 +1,5 @@
 {
-	"page_messages": {
+	"home_page_messages": {
 		"title": "GTA SAN ANDREAS: UNITY PROJECT",
 		"brand": "Redefining the Multiplayer of Grand theft auto San andreas using the future.",
 		"welcome_title": "Welcome !",
@@ -12,6 +12,10 @@
 			"end": "If you find the idea interesting and would like to help visit the \"how to contribute\" guide, join our official Discord, see who the project members are in \"members\" or simply spread the project so that more and more people join the project."
 		}
 	},
+	"contribute_page_messages": {
+		"title": "How To Contribute",
+		"main_text": "If you are interested in helping the project, you could collaborate with some of the following things in the project"
+	},
 	"menus": {
 		"home": "Home",
 		"content": {
@@ -21,6 +25,7 @@
 			"gallery": "Gallery"
 		},
 		"members" : "Members",
+		"contribute":"How to contribute",
 		"findout_btn": "Find out more",
 		"footer": {
 			"discord": "Join to our Discord !",

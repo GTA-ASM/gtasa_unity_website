@@ -1,5 +1,5 @@
 {
-	"page_messages": {
+	"home_page_messages": {
 		"title": "GTA SAN ANDREAS: PROYECTO UNITY",
 		"brand": "Redefiniendo el Multijugador de Grand theft auto San andreas usando el futuro.",
 		"welcome_title": "Bienvenido !",
@@ -11,16 +11,21 @@
 			"start" : "El proyecto cambia constantemente, asi que aca te mostramos algunos de nuestros avances y cambios que constantemente hacen y han hecho evolucionar  al proyecto.",
 			"end": "Si encuentras interesante la idea y quisieras ayudar visita la guia de: \"como contribuir\", unete a nuestro Discord oficial, mira quienes  son los miembros del proyecto en \"miembros\" o simplemente difunde el proyecto para que mas y mas personas se unan a el."
 		}
-	  },
+	},
+	"contribute_page_messages": {
+		"title": "Como Contribuir",
+		"main_text": "Si estas interesado en ayudar a el proyecto, podrias colaborar con algunas de las siguentes cosas en el proyecto"
+	},
 	"menus": {
 		"home": "Inicio",
 		"content": {
-			"title": "Contenido de la pagina",
+			"title": "Contenido del inicio",
 			"welcome": "Bienvenido",
 			"about": "Acerca de",
 			"gallery": "Galeria"
 		},
 		"members": "Miembros",
+		"contribute":"Como Contribuir",
 		"findout_btn": "Saber Mas",
 		"footer": {
 			"discord": "Unete a nuestro Discord !",
