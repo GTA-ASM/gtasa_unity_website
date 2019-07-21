@@ -8,6 +8,9 @@ import './assets/js/custom';
 import 'bootstrap';
 import i18n from './i18n';
 import MultiSelect from 'vue-multiselect';
+import VuePlyr from 'vue-plyr';
+
+Vue.use(VuePlyr);
 
 Vue.component('multiselect', MultiSelect);
 
