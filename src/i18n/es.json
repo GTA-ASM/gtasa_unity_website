@@ -1,13 +1,37 @@
 {
-	"page_messages": {
+	"home_page_messages": {
 		"title": "GTA SAN ANDREAS: PROYECTO UNITY",
 		"brand": "Redefiniendo el Multijugador de Grand theft auto San andreas usando el futuro.",
 		"welcome_title": "Bienvenido !",
-		"welcomer": "Bienvenido a la página oficial de Grand theft auto San andreas unity, Si estás interesado en el proyecto y quieres aprender más, por favor continúe su visita en el sitio;  Nuestra página de miembros para conocer a las personas que participan y construyen, nuestra seccion de metas, aprende como puedes contribuir , y la galería para conocer las características de el proyecto ademas de las descargas de las versiones estables."
-	  },
+		"welcomer": "Bienvenido a la página oficial de Grand theft auto San andreas unity, Si estás interesado en el proyecto y quieres aprender más, por favor continúe su visita en el sitio;  Nuestra página de miembros para conocer a las personas que participan y construyen, nuestra seccion de metas, aprende como puedes contribuir , y la galería para conocer las características de el proyecto ademas de las descargas de las versiones estables.",
+		"about_title" : "Acerca del proyecto",
+		"about": "San Andreas Unity es una recreación de código abierto de GTA San Andreas en Unity. Esta no será una recreación completa, el enfoque está en las características de juego, el multijugador y la creación de un framework que permita la extensión fácil del juego y las posibilidades ilimitadas de modding. El juego no distribuye ninguno de los recursos originales de GTA, por lo que necesitas tener un juego original para ejecutarlo. Ya no estarás limitado por el motor de código cerrado. Tendrás acceso a todas las partes del juego, como la mecánica interna del juego, la física, el renderizado, etc. No más ingeniería inversa, archivos ejecutables enganchados o cosas por el estilo. Ahora, con el acceso a la poderosa API de C # y Unity, el desarrollo será mucho más fácil. Es multiplataforma. Se puede ejecutar en cualquier lugar. Ahora puedes jugar GTA en PS Vita, Nintendo, en VR/AR. Podrías incluso ejecutarlo en WebGL. Y no se trata solo de san andreas. Podemos intentar admitir otras versiones de GTA, como Vice City o Liberty City. Imagina que puedes jugar cualquier versión de GTA en cualquier dispositivo que te guste.",
+		"gallery_title" : "Galeria del proyecto",
+		"gallery": {
+			"start" : "El proyecto cambia constantemente, asi que aca te mostramos algunos de nuestros avances y cambios que constantemente hacen y han hecho evolucionar  al proyecto.",
+			"end": "Si encuentras interesante la idea y quisieras ayudar visita la guia de: \"como contribuir\", unete a nuestro Discord oficial, mira quienes  son los miembros del proyecto en \"miembros\" o simplemente difunde el proyecto para que mas y mas personas se unan a el."
+		}
+	},
+	"contribute_page_messages": {
+		"title": "Como Contribuir",
+		"main_text": "Si estas interesado en ayudar a el proyecto, podrias colaborar con algunas de las siguentes cosas en el proyecto"
+	},
 	"menus": {
 		"home": "Inicio",
+		"content": {
+			"title": "Contenido del inicio",
+			"welcome": "Bienvenido",
+			"about": "Acerca de",
+			"gallery": "Galeria"
+		},
 		"members": "Miembros",
-		"findout_btn": "Saber Mas"
+		"contribute":"Como Contribuir",
+		"findout_btn": "Saber Mas",
+		"footer": {
+			"discord": "Unete a nuestro Discord !",
+			"github": "Visita el repositorio Github !",
+			"youtube": "Visita nuestro canal de Youtube !",
+			"legal": "GTA ASM no representa a Rockstar Games ni a ninguno de sus asociados o franquicias; no distribuye ni promueve la distibucion de material fuera de las  normas de distribucion de juegos y/o material de  Rockstar Games."
+		}
 	}
 }
