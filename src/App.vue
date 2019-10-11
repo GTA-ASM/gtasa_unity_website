@@ -38,6 +38,11 @@ export default {
 					flagCode: 'de',
 					name: 'Deutsch',
 				},
+				{
+					lang: 'pl',
+					flagCode: 'pl',
+					name: 'Polish',
+				},
 			],
 		};
 	},
