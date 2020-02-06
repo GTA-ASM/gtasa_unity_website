@@ -15,7 +15,7 @@
     "core-js": "^2.6.5",
     "flag-icon-css": "^3.3.0",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "popper.js": "^1.15.0",
     "scrollreveal": "^4.0.5",
     "smooth-scroll": "^16.1.0",
