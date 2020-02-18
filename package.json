@@ -1,6 +1,6 @@
 {
-  "name": "sautemplate",
-  "version": "0.1.0",
+  "name": "gtasauwebsite",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
