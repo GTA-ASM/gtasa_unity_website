@@ -1,0 +1,37 @@
+{
+  "home_page_messages": {
+    "title": "GTA SAN ANDREAS: UNITY Projekt",
+    "brand": "Zmieniamy Multiplayer Grand Theft Auto San Andreas korzystając z przyszłości!",
+    "welcome_title": "Witaj!",
+    "welcomer": "Witaj na oficjalnej stronie projektu Grand Theft Auto San Andreas Unity. Jeśli nasz projekt Ciebie wstępnie zainteresował, to proponujemy zapoznać się z dalszą, bardziej szczegółową treścią, dzięki której lepiej poznasz nasz projekt i będziesz mógł pobrać wersję stabilną gry. Jeśli jesteś programistą i chciałbyś nam pomóc, przejdź do zakładki \"Jak zostać kontrybutorem\" aby dowiedzieć się więcej!",
+    "about_title": "O projekcie",
+    "about": "San Andreas Unity jest odtworzeniem GTA San Andreas w formie otwartego oprogramowania, stworzonego w Unity. Natomiast nie będzie to całkowite odtworzenie GTA San Andreas, lecz skupiamy się na funkcjonalności rozgrywki, trybie dla wielu graczy oraz na stworzeniu \"szkieletu\", który pozwoli na łatwy rozwój, jak i nielimitowane możliwości modyfikacji gry. Gra nie zawiera żadnych zasobów związanych z GTA:SA, w związku z tym musisz posiadać kopię GTA:SA, aby móc uruchomić nasz projekt. Nie będziesz już ograniczany przez silnik w formie zamkniętego oprogramowania! Każda osoba ma dostęp do kodu źródłowego, a co za tym idzie do wglądu w takie części gry jak wewnętrzna mechanika, fizyka, renderowanie itp. Koniec z inżynierią wsteczną (analizowaniem oprogramowania pod kątem procesu jego tworzenia), próbami przechwycenia plików wykonywalnych czy innych rzeczy tego typu. Teraz z dostępem do niezawodnego języka C# oraz API Unity, programowanie będzie znacznie prostsze i przyjemniejsze! Nasza gra jest wieloplatformowa, może zostać uruchomiona gdziekolwiek. Już można grać na PS Vita, Nintendo, w VR/AR, a nawet grę można uruchomić w WebGL. Nam nie chodzi tylko o GTA:San Andreas, spróbujemy w najbliższej przyszłości wesprzeć inne wersje GTA, takie jak Vice City czy Liberty City. Wyobraź sobie, że będziesz w stanie zagrać w jakąkolwiek wersję GTA na jakimkolwiek urządzeniu - brzmi świetnie, co?",
+    "gallery_title": "Galeria",
+    "gallery": {
+      "start": "Projekt jest cały czas w fazie rozwoju w związku z czym, niektóre zdjęcia lub filmy mogą być nieaktualne. Tutaj prezentujemy zmiany, jak i postępy, które stale wprowadzamy, dzięki czemu nasz projekt stale się rozwija!",
+      "end": "Jeśli masz ciekawy pomysł i chciałbyś nam pomóc odwiedź zakładkę \"Jak zostać kontrybutorem\", tak samo zachęcamy do dołączenia na nasz oficjalny serwer Discord. Jeśli chciałbyś poznać zespół projektu, odwiedź zakładkę \"Członkowie\"."
+    }
+  },
+  "contribute_page_messages": {
+    "title": "Jak zostać kontrybutorem",
+    "main_text": "Jeśli jesteś zainteresowany współpracą z nami, przy rozwijaniu projektu to możesz nam pomóc, przy niektórych jego elementach!"
+  },
+  "menus": {
+    "home": "Strona główna",
+    "content": {
+      "title": "Zawartość strony głównej",
+      "welcome": "Witaj!",
+      "about": "O projekcie",
+      "gallery": "Galeria"
+    },
+    "members": "Członkowie",
+    "contribute": "Jak zostać kontrybutorem",
+    "findout_btn": "Dowiedz się więcej",
+    "footer": {
+      "discord": "Odwiedź na nasz serwer Discord!",
+      "github": "Odwiedź nasze repozytorium na GitHub!",
+      "youtube": "Odwiedź nasz kanał na YouTube!",
+      "legal": "GTA ASM nie reprezentuje Rockstar Games lub innych jego współpracowników, lub franczyzobiorców; Nie rozpowszechnia ani nie promuje materiałów poza zasadami rozpowszechniania gier i / lub materiałów Rockstar Games."
+    }
+  }
+}
