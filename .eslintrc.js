@@ -1,32 +1,33 @@
 module.exports = {
-  root: true,
+	root: true,
 
-  env: {
-    node: true
-  },
+	env: {
+		node: true,
+	},
 
-  extends: [
-    "plugin:vue/essential",
-    "eslint:recommended",
-    "@vue/typescript/recommended",
-    "@vue/prettier",
-    "@vue/prettier/@typescript-eslint"
-  ],
+	extends: [
+		'plugin:vue/essential',
+		'eslint:recommended',
+		'@vue/typescript/recommended',
+		'@vue/prettier',
+		'@vue/prettier/@typescript-eslint',
+	],
 
-  parserOptions: {
-    ecmaVersion: 2020
-  },
+	parserOptions: {
+		ecmaVersion: 2020,
+	},
 
-  rules: {
-    'no-console': 'off',
-    'no-debugger': 'off'
-  },
+	rules: {
+		'no-console': 'off',
+		'no-debugger': 'off',
+		'max-len': ['error', { code: 120, ignoreUrls: true }],
+	},
 
-  'extends': [
-    'plugin:vue/recommended',
-    'eslint:recommended',
-    '@vue/typescript/recommended',
-    '@vue/prettier',
-    '@vue/prettier/@typescript-eslint'
-  ]
+	extends: [
+		'plugin:vue/recommended',
+		'eslint:recommended',
+		'@vue/typescript/recommended',
+		'@vue/prettier',
+		'@vue/prettier/@typescript-eslint',
+	],
 };
