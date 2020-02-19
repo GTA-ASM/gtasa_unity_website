@@ -1,37 +1,37 @@
 {
 	"home_page_messages": {
-		"title": "GTA SAN ANDREAS: UNITY PROJEKT",
-		"brand": "Neudefinition des Grand theft auto San andreas Multiplayers mit hilfe der Zunkunft.",
-		"welcome_title": "Wilkommen!",
-		"welcomer": "Willkommen zu der Offiziellen Seite des Grand theft auto San andreas Unity Projekts! Wenn du in das Projekt interessiert bist oder mehr erfahren willst, dann setze deinen Besuch auf der Seite fort; Unsere Mitglieder Seite um zu wissen wer sich am Projekt beteiligt, Unsere Ziel Sektion, Lerne wie du dich beteiligen kannst und besuche die Gallerie um die Eigenschaften des Projekts zu erfahren. Auf dieser Seite findest du auch die Stabielen Version zum Download.",
+		"title": "GTA SAN ANDREAS": UNITY-PROJEKT",
+		"brand": "Neudefinition des Multiplayers von Grand Theft Auto San andreas unter Verwendung der Zukunft",
+		"welcome_title": "Willkommen!",
+		"welcomer": "Willkommen auf der offiziellen Seite von Grand theft auto San andreas Unity, Wenn Sie an dem Projekt interessiert sind und mehr darüber erfahren möchten, setzen Sie bitte Ihren Besuch auf der Seite fort; Unsere Mitgliederseite, um die Leute kennenzulernen, die sich beteiligen, unser Ziel-Abschnitt, um zu erfahren, wie Sie dazu beitragen können, und die Galerie, um die Merkmale des Projekts zusätzlich zu den Downloads der stabilen Versionen kennenzulernen.",
 		"about_title" : "Über das Projekt",
-		"about": "San Andreas Unity ist eine Open-Source-Nachbildung von GTA San Andreas in Unity. Dies wird keine vollständige Neuerstellung sein, aber der Fokus liegt auf den Gameplay-Funktionen, dem Multiplayer und der Schaffung eines Frameworks, das eine einfache Erweiterung des Spiels und unbegrenzte Modifizierungsmöglichkeiten ermöglicht. Das Spiel verteilt keine der ursprünglichen GTA-Assets. Sie müssen also über ein eigenes Spiel verfügen, um es spielen zu können. Sie werden nicht länger durch eine Closed-Source-Engine eingeschränkt. Sie haben Zugriff auf alle Teile des Spiels, z. B. interne Spielmechanik, Physik, Rendering usw. Sie haben freie Auswahl. Schluss mit Reverse Engineering, dem Einbinden von ausführbaren Dateien oder Ähnlichem. Mit dem Zugriff auf leistungsstarke C # - und Unity-API wird die Entwicklung jetzt viel einfacher. Es ist plattformübergreifend. Es kann überall laufen. Jetzt können Sie GTA auf PS Vita, Nintendo, in VR / AR spielen. Sie könnten es vielleicht sogar in WebGL ausführen. Und es geht nicht nur um San Andreas. Möglicherweise versuchen wir, andere Versionen von GTA zu unterstützen, z. B. Vice City oder Liberty City. Stelle dir vor, du könntest jede Version von GTA auf jedem beliebigen Gerät spielen.",
+		"about": "San Andreas Unity" ist eine Open-Source-Erstellung von GTA San Andreas in Unity. Dies wird keine vollständige Neuerstellung sein, aber der Schwerpunkt liegt auf den Gameplay-Features, dem Mehrspieler-Modus und der Erstellung eines Frameworks, das eine einfache Erweiterung des Spiels und unbegrenzte Moddingmöglichkeiten ermöglicht. Das Spiel vertreibt keine originalen GTA-Assets, daher müssen Sie das Originalspiel besitzen, um es zu betreiben. Sie werden nicht mehr durch die Closed-Source-Engine eingeschränkt. Sie werden Zugang zu allen Teilen des Spiels haben, wie z.B. der internen Spielmechanik, der Physik, dem Rendering, usw.... wie Sie wollen. Kein Reverse-Engineering, keine ausführbaren Dateien mehr oder ähnliches. Mit dem Zugriff auf die leistungsstarke C#- und Unity-API wird die Entwicklung jetzt viel einfacher. Es ist plattformübergreifend. Es kann überall laufen. Jetzt können Sie GTA auf PS Vita, Nintendo und in VR/AR spielen. Vielleicht können Sie es sogar in WebGL ausführen. Und es geht nicht nur um San Andreas. Wir könnten versuchen, andere Versionen von GTA zu unterstützen, wie Vice City oder Liberty City. Stellen Sie sich vor, dass Sie jede Version von GTA auf jedem beliebigen Gerät abspielen können",
 		"gallery_title" : "Projektgalerie",
 		"gallery": {
-			"start" : "Wir zeigen dir hier einige unserer Fortschritte und Änderungen, da sich das Projekt ständig weiterentwickelt.",
-			"end": "Wenn du die Idee interessant findest und helfen möchtest, dann schaue dir den Leitfaden \"Wie man Beiträge leistet\" an. Danach könntest du auch noch unserem ofiziellen Discord Server beitreten und sehen wer die Projektmitglieder sind. Und wenn du dem Projekt noch mehr helfen möchtest, dann kannst du es noch verbreiten, damit immer mehr Menschen dem Projekt beitreten."
+			"start" : "Das Projekt ändert sich ständig, deshalb zeigen wir Ihnen hier einige unserer Fortschritte und Änderungen, die das Projekt ständig machen und weiterentwickelt haben,
+			"Ende": "Wenn Sie die Idee interessant finden und helfen möchten, den Leitfaden \"Wie man einen Beitrag leistet\" zu besuchen, schließen Sie sich unserer offiziellen Discord an, sehen Sie, wer die Projektmitglieder in \"Mitglieder\" sind oder verbreiten Sie das Projekt einfach, damit sich immer mehr Menschen dem Projekt anschließen.
 		}
 	},
 	"contribute_page_messages": {
-		"title": "Wie Man zu dem Projekt beiträgt",
-		"main_text": "Wenn du daran interessiert bist, das Projekt zu unterstützen, dann kannst du mit den folgenden Dingen im Projekt zusammenarbeiten"
+		"Titel": "Wie man einen Beitrag leistet",
+		"main_text": "Wenn Sie daran interessiert sind, dem Projekt zu helfen, könnten Sie an einigen der folgenden Dinge im Projekt mitarbeiten".
 	},
 	"menus": {
 		"home": "Home",
 		"content": {
-			"title": "Inhalt der Seite",
-			"welcome": "willkommen",
-			"about": "Über",
-			"gallery": "Galerie"
+			"Titel": "Inhalt der Homepage",
+			"Willkommen": "Willkommen",
+			"Über": "Über",
+			"Galerie": "Galerie": "Galerie".
 		},
 		"members" : "Mitglieder",
-		"contribute":"Wie man zu dem Projekt beiträgt",
-		"findout_btn": "Finde mehr heraus",
+		"contribute": "Wie man einen Beitrag leistet",
+		"findout_btn": "Erfahren Sie mehr",
 		"footer": {
-			"discord": "Trete unserem Discord-Server bei!",
-			"github": "Besuch unser Github Reposiory!",
-			"youtube": "Besuch unseren Youtube Kanal!",
-			"legal": "GTA ASM vertritt weder Rockstar Games noch einen seiner Partner oder Franchisenehmer. Vertreibt oder fördert nicht die Verbreitung von Material außerhalb der Regeln für die Verbreitung von Spielen und oder Rockstar Games-Material."
+			"discord": "Treten Sie unserem Discord Server bei!",
+			"github": "Besuchen Sie den Github Repo !",
+			"youtube": "Besuchen Sie unseren Youtube-Kanal !",
+			"legal": "GTA ASM repräsentiert weder Rockstar Games noch einen seiner Partner oder Franchiseunternehmen; es verteilt oder fördert nicht die Verteilung von Material außerhalb der Regeln für die Verteilung von Spielen und/oder Rockstar Games-Material.
 		}
 	}
 }
