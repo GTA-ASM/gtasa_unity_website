@@ -9,7 +9,19 @@
 		"i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/i18n/**/*.json'"
 	},
 	"dependencies": {
+		"@fortawesome/fontawesome-free": "^5.12.1",
+		"@popperjs/core": "^2.0.6",
+		"@sweetalert2/theme-material-ui": "^3.1.0",
+		"animate.css": "^3.7.2",
+		"bootstrap": "^4.4.1",
+		"bootstrap-vue": "^2.5.0",
 		"core-js": "^3.6.4",
+		"font-awesome": "^4.7.0",
+		"jquery": "^3.4.1",
+		"js-cookie": "^2.2.1",
+		"lodash": "^4.17.15",
+		"sweetalert2": "^9.7.2",
+		"tippy.js": "^5.2.1",
 		"vue": "^2.6.11",
 		"vue-i18n": "^8.0.0",
 		"vue-router": "^3.1.5",
@@ -17,6 +29,8 @@
 	},
 	"devDependencies": {
 		"@kazupon/vue-i18n-loader": "^0.3.0",
+		"@types/js-cookie": "^2.2.4",
+		"@types/lodash": "^4.14.149",
 		"@types/webpack": "^4.4.0",
 		"@typescript-eslint/eslint-plugin": "^2.18.0",
 		"@typescript-eslint/parser": "^2.18.0",
