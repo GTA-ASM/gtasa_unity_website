@@ -1,3 +1,37 @@
 {
-	"message": "hello i18n !!"
+	"home_page_messages": {
+		"title": "GTA SAN ANDREAS: UNITY PROJECT",
+		"brand": "Redefining the Multiplayer of Grand theft auto San andreas using the future.",
+		"welcome_title": "Welcome !",
+		"welcomer": "Welcome to the official page of Grand theft auto San andreas unity, If you are interested in the project and want to learn more, please continue your visit on the site; Our member page to know the people who participate and build, our goal section, learn how you can contribute, and the gallery to know the characteristics of the project in addition to the downloads of the stable versions.",
+		"about_title": "About the project",
+		"about": "San Andreas Unity is an open source recreation of GTA San Andreas in Unity. This won't be a complete recreation, but the focus is on gameplay features, mutliplayer, and creating a framework which will allow easy game extending and unlimited modding possibilities. The game does not distribute any of original GTA assets, so you need to own original game in order to run it. You will no longer be limited by closed source engine. You will have access to all parts of the game, such are internal game mechanics, physics, rendering, etc... you name it. No more reverse engineering, hooking executables, or stuff like that. Now, with access to powerfull C# and Unity API, development will be much easier. It's cross platform. It can run anywhere. Now you can play GTA on PS Vita, Nintendo, in VR/AR. You could maybe even run it in WebGL. And it's not only about San Andreas. We may try to support other versions of GTA, like Vice City or Liberty City. Imagine that you can play any version of GTA on any device you like.",
+		"gallery_title": "Project gallery",
+		"gallery": {
+			"start": "The project changes constantly, so here we show you some of our advances and changes that constantly make and have evolved the project.",
+			"end": "If you find the idea interesting and would like to help visit the \"how to contribute\" guide, join our official Discord, see who the project members are in \"members\" or simply spread the project so that more and more people join the project."
+		}
+	},
+	"contribute_page_messages": {
+		"title": "How To Contribute",
+		"main_text": "If you are interested in helping the project, you could collaborate with some of the following things in the project"
+	},
+	"menus": {
+		"home": "Home",
+		"content": {
+			"title": "Home Content",
+			"welcome": "Welcome",
+			"about": "About",
+			"gallery": "Gallery"
+		},
+		"members": "Members",
+		"contribute": "How to contribute",
+		"findout_btn": "Find out more",
+		"footer": {
+			"discord": "Join to our Discord !",
+			"github": "Visit the Github Repo !",
+			"youtube": "Visit our Youtube Channel !",
+			"legal": "GTA ASM does not represent Rockstar Games or any of its associates or franchises; does not distribute or promote the distribution of material outside the rules of distribution of games and / or Rockstar Games material."
+		}
+	}
 }
