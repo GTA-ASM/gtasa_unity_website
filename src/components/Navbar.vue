@@ -1,79 +1,66 @@
 <template>
-	<nav class="navbar navbar-sticky navbar-expand-md navbar-dark bg-dark sticky-top p-3 text-center">
-		<router-link :to="{name: 'home'}" class="navbar-brand">
-			<img src="../assets/img/unitylogo.svg" width="40" height="40" class="d-inline-block align-top" alt="Unity LOGO">
-		</router-link>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav container-fluid">
-				<li class="nav-item">
-					<router-link :to="{name: 'home'}" class="nav-link"><i class="fas fa-home"></i> {{$t('menus.home')}}</router-link>
-				</li>
-				<li class="nav-item dropdown" v-if="areHome">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fas fa-list"></i>
-						{{$t('menus.content.title')}}
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" data-scroll href="#welcome">{{$t('menus.content.welcome')}}</a>
-						<a class="dropdown-item" data-scroll href="#about">{{$t('menus.content.about')}}</a>
-						<a class="dropdown-item" data-scroll href="#gallery">{{$t('menus.content.gallery')}}</a>
-					</div>
-				</li>
-				<li class="nav-item">
-					<router-link :to="{name: 'members'}" class="nav-link"><i class="fas fa-user-friends"></i> {{$t('menus.members')}}</router-link>
-				</li>
-				<li class="nav-item">
-					<router-link :to="{name: 'contribute'}" class="nav-link"><i class="fas fa-hand-holding-heart"></i> {{$t('menus.contribute')}}</router-link>
-				</li>
-			</ul>
-			<multiselect @input="updateLocales()" v-model="currentLocale" :block-keys="['Tab', 'Enter']" track-by="lang" label="name" placeholder="Select your language" :options="this.locales" :searchable="false" :allow-empty="false" class="lang-select">
-				<template slot="singleLabel" slot-scope="props">
-					<span class="option__title text-capitalize">
-						<i :class="flagClass"></i>
-						{{ props.option.name }}
-					</span>
-				</template>
-				<template slot="option" slot-scope="props">
-					<div class="option__desc text-uppercase">
-						<span class="option__title">
-							{{ props.option.lang }}
-						</span>
-					</div>
-				</template>
-			</multiselect>
-		</div>
-	</nav>
+	<div id="appNav">
+		<!-- Image and text -->
+		<b-navbar class="bg-bk" type="dark" :fixed="'top'" :toggleable="'md'">
+			<b-navbar-brand :to="{ name: 'Home' }">
+				<img
+					src="@/assets/img/unity-logo_light.svg"
+					width="35"
+					height="35"
+					class="d-inline-block align-middle"
+					alt="Unity Logo"
+				/>
+				GTA SA UNITY
+			</b-navbar-brand>
+
+			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+			<b-collapse id="nav-collapse" is-nav>
+				<b-navbar-nav class="text-center">
+					<b-nav-item :to="{ name: 'Home' }">
+						<i class="fas fa-home"></i>
+						{{ $t('menus.home') }}
+					</b-nav-item>
+				</b-navbar-nav>
+
+				<!-- Right aligned nav items -->
+				<b-navbar-nav class="text-center ml-md-auto">
+					<b-nav-form>
+						<multi-select
+							track-by="code"
+							label="text"
+							:value="lang"
+							:options="langs"
+							:allow-empty="false"
+							@select="selectLang"
+						>
+							<template slot="singleLabel" slot-scope="props">
+								<span class="flag-icon" :class="[`flag-icon-${props.option.flag}`]"></span>
+								{{ props.option.text }}
+							</template>
+							<template slot="option" slot-scope="props">
+								<span class="flag-icon" :class="[`flag-icon-${props.option.flag}`]"></span>
+								{{ props.option.text }}
+							</template>
+						</multi-select>
+					</b-nav-form>
+				</b-navbar-nav>
+			</b-collapse>
+		</b-navbar>
+	</div>
 </template>
-<script>
-export default {
-	props:['locales', 'locale'],
-	data: function() {
-		return {
-			currentLocale: this.locale,
-		};
+<script lang="ts">
+import Vue from 'vue';
+import { mapState, mapActions } from 'vuex';
+import MultiSelect from 'vue-multiselect';
+export default Vue.extend({
+	name: 'Navbar',
+	components: { MultiSelect },
+	computed: {
+		...mapState(['langs', 'lang']),
 	},
 	methods: {
-		updateLocales() {
-			this.$root.$i18n.locale = this.currentLocale.lang;
-			const cookieAuth = JSON.parse(localStorage.getItem('cookiePer')) || null;
-			if (cookieAuth == true) {
-				localStorage.setItem('uLang', this.currentLocale.lang);
-			}
-		},
+		...mapActions(['selectLang']),
 	},
-	computed: {
-		flagClass: function() {
-			return {
-				'flag-icon': true,
-				[`flag-icon-${this.currentLocale.flagCode}`] : true,
-			};
-		},
-		areHome: function() {
-			return this.$route.path === '/';
-		},
-	},
-};
+});
 </script>

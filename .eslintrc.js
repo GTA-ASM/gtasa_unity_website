@@ -1,61 +1,33 @@
 module.exports = {
-  root: true,
+	root: true,
 
-  env: {
-    node: true
-  },
+	env: {
+		node: true,
+	},
 
-  extends: ["plugin:vue/essential", "eslint:recommended"],
+	extends: [
+		'plugin:vue/essential',
+		'eslint:recommended',
+		'@vue/typescript/recommended',
+		'@vue/prettier',
+		'@vue/prettier/@typescript-eslint',
+	],
 
-  rules: {
-    'no-console': 'off',
-    'no-debugger': 'off',
-	'vue/this-in-template': 'warning',
-	"brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
-	"comma-dangle": ["error", "always-multiline"],
-	"comma-spacing": "error",
-	"comma-style": "error",
-	"curly": ["error", "multi-line", "consistent"],
-	"dot-location": ["error", "property"],
-	"handle-callback-err": "off",
-	"indent": ["error", "tab"],
-	"max-nested-callbacks": ["error", { "max": 4 }],
-	"max-statements-per-line": ["error", { "max": 2 }],
-	"no-console": "off",
-	"no-empty-function": "error",
-	"no-floating-decimal": "error",
-	"no-inline-comments": "error",
-	"no-lonely-if": "error",
-	"no-multi-spaces": "error",
-	"no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1, "maxBOF": 0 }],
-	"no-shadow": ["error", { "allow": ["err", "resolve", "reject"] }],
-	"no-trailing-spaces": ["off"],
-	"no-unused-vars":"off",
-	"no-var": "error",
-	"object-curly-spacing": ["error", "always"],
-	"prefer-const": "error",
-	"quotes": ["error", "single"],
-	"semi": ["error", "always"],
-	"space-before-blocks": "error",
-	"space-before-function-paren": ["error", {
-		"anonymous": "never",
-		"named": "never",
-		"asyncArrow": "always"
-	}],
-	"space-in-parens": "error",
-	"space-infix-ops": "error",
-	"space-unary-ops": "error",
-	"spaced-comment": "error",
-	"yoda": "error"
-  },
+	parserOptions: {
+		ecmaVersion: 2020,
+	},
 
-  parserOptions: {
-	parser: 'babel-eslint',
-	ecmaVersion: 2017,
-	sourceType: 'module'
-  },
+	rules: {
+		'no-console': 'off',
+		'no-debugger': 'off',
+		'max-len': ['error', { code: 120, ignoreUrls: true }],
+	},
 
-  'extends': [
-    'plugin:vue/essential'
-  ]
+	extends: [
+		'plugin:vue/recommended',
+		'eslint:recommended',
+		'@vue/typescript/recommended',
+		'@vue/prettier',
+		'@vue/prettier/@typescript-eslint',
+	],
 };

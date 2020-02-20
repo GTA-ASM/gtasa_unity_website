@@ -1,20 +1,20 @@
 {
 	"home_page_messages": {
-		"title": "GTA SAN ANDREAS": UNITY-PROJEKT",
+		"title": "GTA SAN ANDREAS: UNITY-PROJEKT",
 		"brand": "Neudefinition des Multiplayers von Grand Theft Auto San andreas unter Verwendung der Zukunft",
 		"welcome_title": "Willkommen!",
 		"welcomer": "Willkommen auf der offiziellen Seite von Grand theft auto San andreas Unity, Wenn Sie an dem Projekt interessiert sind und mehr darüber erfahren möchten, setzen Sie bitte Ihren Besuch auf der Seite fort; Unsere Mitgliederseite, um die Leute kennenzulernen, die sich beteiligen, unser Ziel-Abschnitt, um zu erfahren, wie Sie dazu beitragen können, und die Galerie, um die Merkmale des Projekts zusätzlich zu den Downloads der stabilen Versionen kennenzulernen.",
-		"about_title" : "Über das Projekt",
-		"about": "San Andreas Unity" ist eine Open-Source-Erstellung von GTA San Andreas in Unity. Dies wird keine vollständige Neuerstellung sein, aber der Schwerpunkt liegt auf den Gameplay-Features, dem Mehrspieler-Modus und der Erstellung eines Frameworks, das eine einfache Erweiterung des Spiels und unbegrenzte Moddingmöglichkeiten ermöglicht. Das Spiel vertreibt keine originalen GTA-Assets, daher müssen Sie das Originalspiel besitzen, um es zu betreiben. Sie werden nicht mehr durch die Closed-Source-Engine eingeschränkt. Sie werden Zugang zu allen Teilen des Spiels haben, wie z.B. der internen Spielmechanik, der Physik, dem Rendering, usw.... wie Sie wollen. Kein Reverse-Engineering, keine ausführbaren Dateien mehr oder ähnliches. Mit dem Zugriff auf die leistungsstarke C#- und Unity-API wird die Entwicklung jetzt viel einfacher. Es ist plattformübergreifend. Es kann überall laufen. Jetzt können Sie GTA auf PS Vita, Nintendo und in VR/AR spielen. Vielleicht können Sie es sogar in WebGL ausführen. Und es geht nicht nur um San Andreas. Wir könnten versuchen, andere Versionen von GTA zu unterstützen, wie Vice City oder Liberty City. Stellen Sie sich vor, dass Sie jede Version von GTA auf jedem beliebigen Gerät abspielen können",
-		"gallery_title" : "Projektgalerie",
+		"about_title": "Über das Projekt",
+		"about": "San Andreas Unity ist eine Open-Source-Erstellung von GTA San Andreas in Unity. Dies wird keine vollständige Neuerstellung sein, aber der Schwerpunkt liegt auf den Gameplay-Features, dem Mehrspieler-Modus und der Erstellung eines Frameworks, das eine einfache Erweiterung des Spiels und unbegrenzte Moddingmöglichkeiten ermöglicht. Das Spiel vertreibt keine originalen GTA-Assets, daher müssen Sie das Originalspiel besitzen, um es zu betreiben. Sie werden nicht mehr durch die Closed-Source-Engine eingeschränkt. Sie werden Zugang zu allen Teilen des Spiels haben, wie z.B. der internen Spielmechanik, der Physik, dem Rendering, usw.... wie Sie wollen. Kein Reverse-Engineering, keine ausführbaren Dateien mehr oder ähnliches. Mit dem Zugriff auf die leistungsstarke C#- und Unity-API wird die Entwicklung jetzt viel einfacher. Es ist plattformübergreifend. Es kann überall laufen. Jetzt können Sie GTA auf PS Vita, Nintendo und in VR/AR spielen. Vielleicht können Sie es sogar in WebGL ausführen. Und es geht nicht nur um San Andreas. Wir könnten versuchen, andere Versionen von GTA zu unterstützen, wie Vice City oder Liberty City. Stellen Sie sich vor, dass Sie jede Version von GTA auf jedem beliebigen Gerät abspielen können",
+		"gallery_title": "Projektgalerie",
 		"gallery": {
-			"start" : "Das Projekt ändert sich ständig, deshalb zeigen wir Ihnen hier einige unserer Fortschritte und Änderungen, die das Projekt ständig machen und weiterentwickelt haben,
-			"Ende": "Wenn Sie die Idee interessant finden und helfen möchten, den Leitfaden \"Wie man einen Beitrag leistet\" zu besuchen, schließen Sie sich unserer offiziellen Discord an, sehen Sie, wer die Projektmitglieder in \"Mitglieder\" sind oder verbreiten Sie das Projekt einfach, damit sich immer mehr Menschen dem Projekt anschließen.
+			"start": "Das Projekt ändert sich ständig, deshalb zeigen wir Ihnen hier einige unserer Fortschritte und Änderungen, die das Projekt ständig machen und weiterentwickelt haben",
+			"Ende": "Wenn Sie die Idee interessant finden und helfen möchten, den Leitfaden \"Wie man einen Beitrag leistet\" zu besuchen, schließen Sie sich unserer offiziellen Discord an, sehen Sie, wer die Projektmitglieder in \"Mitglieder\" sind oder verbreiten Sie das Projekt einfach, damit sich immer mehr Menschen dem Projekt anschließen."
 		}
 	},
 	"contribute_page_messages": {
 		"Titel": "Wie man einen Beitrag leistet",
-		"main_text": "Wenn Sie daran interessiert sind, dem Projekt zu helfen, könnten Sie an einigen der folgenden Dinge im Projekt mitarbeiten".
+		"main_text": "Wenn Sie daran interessiert sind, dem Projekt zu helfen, könnten Sie an einigen der folgenden Dinge im Projekt mitarbeiten"
 	},
 	"menus": {
 		"home": "Home",
@@ -22,16 +22,34 @@
 			"Titel": "Inhalt der Homepage",
 			"Willkommen": "Willkommen",
 			"Über": "Über",
-			"Galerie": "Galerie": "Galerie".
+			"Galerie": "Galerie"
 		},
-		"members" : "Mitglieder",
+		"members": "Mitglieder",
 		"contribute": "Wie man einen Beitrag leistet",
 		"findout_btn": "Erfahren Sie mehr",
 		"footer": {
 			"discord": "Treten Sie unserem Discord Server bei!",
 			"github": "Besuchen Sie den Github Repo !",
 			"youtube": "Besuchen Sie unseren Youtube-Kanal !",
-			"legal": "GTA ASM repräsentiert weder Rockstar Games noch einen seiner Partner oder Franchiseunternehmen; es verteilt oder fördert nicht die Verteilung von Material außerhalb der Regeln für die Verteilung von Spielen und/oder Rockstar Games-Material.
+			"legal": "GTA ASM repräsentiert weder Rockstar Games noch einen seiner Partner oder Franchiseunternehmen; es verteilt oder fördert nicht die Verteilung von Material außerhalb der Regeln für die Verteilung von Spielen und/oder Rockstar Games-Material."
+		}
+	},
+	"notifications": {
+		"cookies": {
+			"question_prop": {
+				"title": "Cookies zulassen",
+				"text": "Unsere Website verwendet Cookies, um Ihr Surferlebnis zu verbessern. Möchten Sie bei zukünftigen Besuchen die Verwendung von Cookies zulassen?",
+				"allow_text": "Ja, warum nicht!",
+				"dissmis_text": "Nein Danke, mir geht es gut"
+			},
+			"allowed_prop": {
+				"title": "Statthaft",
+				"text": "Tolle!. Danke, du wirst mich das nächste Mal nicht sehen ;)"
+			},
+			"disallowed_prop": {
+				"title": "Ungültig",
+				"text": "Okay, ich werde dich das nächste Mal daran erinnern, wenn du es dir anders überlegst :D."
+			}
 		}
 	}
 }

@@ -1,125 +1,97 @@
 <template>
-  <div id="app" class="h-100">
-	<NavbarComp :locales="localesRegistered" :locale="currentLocale"></NavbarComp>
-	<a data-scroll href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
-    <router-view class="h-100 w-100"/>
-	<FooterComp></FooterComp>
-  </div>
+	<div id="app">
+		<app-navbar></app-navbar>
+		<a id="return-to-top" data-scroll href="#">
+			<i class="fas fa-chevron-up"></i>
+		</a>
+		<router-view></router-view>
+		<app-footer></app-footer>
+	</div>
 </template>
-<script>
+<script lang="ts">
+import Vue from 'vue';
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
-import Swal from 'sweetalert2/dist/sweetalert2';
-import _ from 'lodash';
-export default {
+import Swal from 'sweetalert2';
+import Cookies from 'js-cookie';
+import { mapActions } from 'vuex';
+export default Vue.extend({
 	name: 'App',
-	components: { 
-		'NavbarComp': Navbar,
-		'FooterComp': Footer,
+	components: {
+		appFooter: Footer,
+		appNavbar: Navbar,
 	},
-	mounted: function() {
-		this.askCookieAllow();
-	},
-	data: function() {
-		return {
-			localesRegistered: [
-				{
-					lang: 'en',
-					flagCode: 'us',
-					name: 'English',
-				},
-				{
-					lang: 'es',
-					flagCode: 'es',
-					name: 'Español',
-				},
-				{
-					lang: 'de',
-					flagCode: 'de',
-					name: 'Deutsch',
-				},
-				{
-					lang: 'pl',
-					flagCode: 'pl',
-					name: 'Polish',
-				},
-			],
-		};
-	},
-	computed: {
-		currentLocale: function() {
-			return _.find(this.localesRegistered, ['lang', this.$root.$i18n.locale]);
-		},
+	mounted: async function(): Promise<void> {
+		const cookiesLang = Cookies.get('pageLang') !== undefined ? (Cookies.get('pageLang') as string) : null;
+		const loadedLang = cookiesLang !== null ? cookiesLang : sessionStorage.getItem('pageLang');
+		if (loadedLang !== null) {
+			this.selectLang(loadedLang);
+			this.$i18n.locale = loadedLang;
+		} else {
+			this.selectLang('en');
+			this.$i18n.locale = 'en';
+		}
+		this.$store.watch(
+			(state, getters) => getters.currentLang,
+			newValue => {
+				this.$i18n.locale = newValue;
+				if (Cookies.get('pageLang') !== undefined) Cookies.remove('pageLang');
+				if (Cookies.get('allowCookies') !== undefined) Cookies.set('pageLang', newValue);
+				else sessionStorage.setItem('pageLang', newValue);
+			}
+		);
+		if (Cookies.get('allowCookies') === undefined) await this.askForCookies();
 	},
 	methods: {
-		askCookieAllow() {
-			const Storage = localStorage;
-			const registeredPer = JSON.parse(Storage.getItem('cookiePer')) || null;
-			console.log(`Registered Authorization ${registeredPer}`);
-			if (registeredPer == false || registeredPer == null) {
-				Swal.fire({
-					type: 'info',
+		...mapActions(['selectLang']),
+		askForCookies: async function(): Promise<void> {
+			const askRes = await Swal.fire({
+				icon: 'question',
+				toast: true,
+				position: 'bottom',
+				allowEscapeKey: false,
+				title: this.$i18n.tc('notifications.cookies.question_prop.title'),
+				text: this.$i18n.tc('notifications.cookies.question_prop.text'),
+				showConfirmButton: true,
+				showCancelButton: true,
+				showCloseButton: false,
+				confirmButtonText: `${this.$i18n.tc(
+					'notifications.cookies.question_prop.allow_text'
+				)} <i class="fas fa-check"><i/>`,
+				cancelButtonText: `${this.$i18n.tc(
+					'notifications.cookies.question_prop.dissmis_text'
+				)} <i class="fas fa-ban"><i/>`,
+			});
+
+			if (askRes.value) {
+				Cookies.set('allowCookies', 'allow');
+				await Swal.fire({
+					icon: 'success',
 					toast: true,
 					position: 'bottom',
-					title: 'Allow Cookies',
-					text: 'Our site uses cookies to improve your browsing experience, and your future visits, according to the use of cookies?',
-					showConfirmButton: true,
-					showCancelButton: true,
-					confirmButtonText: 'Yes, Why not! <i class="fas fa-check"><i/>',
-					cancelButtonText: 'No, I\'m Fine <i class="fas fa-ban"><i/>',
-					cancelButtonColor: 'Red',
 					allowEscapeKey: false,
-					customClass: {
-						popout: 'animated bounce slower',
-						confirmButton: 'btn btn-sm',
-						cancelButton: 'btn btn-sm',
-					},
-				}).then(result => {
-					if(result.value) {
-						Storage.setItem('cookiePer', true);
-						Swal.fire({
-							type: 'success',
-							toast: true,
-							position: 'bottom',
-							title: 'Allowed',
-							text: 'Amazing, thank you, you will not see me next time ;)',
-							showConfirmButton: true,
-							showCancelButton: false,
-							confirmButtonText: 'Ok <i class="fas fa-check"><i/>',
-							allowEscapeKey: false,
-							timer: 5000,
-							customClass: {
-								popout: 'animated bounce slower',
-								confirmButton: 'btn btn-sm',
-							},
-						});
-					}
-					else if (result.dismiss === Swal.DismissReason.cancel) {
-						Storage.setItem('cookiePer', false);
-						Swal.fire({
-							type: 'error',
-							toast: true,
-							position: 'bottom',
-							title: 'Disallowed',
-							text: 'Okay, I\'ll remind you next time, if you change your mind :D',
-							showConfirmButton: true,
-							showCancelButton: false,
-							confirmButtonText: 'Ok <i class="fas fa-check"><i/>',
-							allowEscapeKey: false,
-							timer: 5000,
-							customClass: {
-								popout: 'animated bounce slower',
-								confirmButton: 'btn btn-sm',
-							},
-						});
-					}
+					title: this.$i18n.tc('notifications.cookies.allowed_prop.title'),
+					text: this.$i18n.tc('notifications.cookies.allowed_prop.text'),
+					showCancelButton: false,
+					confirmButtonText: 'OK <i class="fas fa-check"><i/>',
+					timer: 5000,
+					timerProgressBar: true,
+				});
+			} else if (askRes.dismiss === Swal.DismissReason.cancel) {
+				await Swal.fire({
+					icon: 'error',
+					toast: true,
+					position: 'bottom',
+					allowEscapeKey: false,
+					title: this.$i18n.tc('notifications.cookies.disallowed_prop.title'),
+					text: this.$i18n.tc('notifications.cookies.disallowed_prop.text'),
+					showCancelButton: false,
+					confirmButtonText: 'OK <i class="fas fa-check"><i/>',
+					timer: 5000,
+					timerProgressBar: true,
 				});
 			}
 		},
 	},
-};
+});
 </script>
-
-<style lang="scss">
-	@import './assets/scss/main.scss';
-</style>
