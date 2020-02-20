@@ -37,18 +37,18 @@
 	"notifications": {
 		"cookies": {
 			"question_prop": {
-				"title": "Allow Cookies",
-				"text": "Our site uses cookies to improve your browsing experience, and your future visits, you want to allow cookies usage?",
-				"allow_text": "Yes, Why not!",
-				"dissmis_text": "No Thanks, I'm fine"
+				"title": "Zezwalaj na pliki cookie",
+				"text": "Nasza strona korzysta z plików cookie, aby poprawić komfort przeglądania, a przy przyszłych wizytach chcesz zezwolić na korzystanie z plików cookie?",
+				"allow_text": "Tak, czemu nie!",
+				"dissmis_text": "Nie dzięki, jest ok"
 			},
 			"allowed_prop": {
-				"title": "Allowed",
-				"text": "Amazing!. Thank you, you will not see me next time ;)"
+				"title": "Dozwolony",
+				"text": "Niesamowity!. Dziękuję, nie zobaczysz mnie następnym razem ;)"
 			},
 			"disallowed_prop": {
-				"title": "Disallowed",
-				"text": "Okay, I'll remind you next time, if you change your mind :D"
+				"title": "Niedozwolone",
+				"text": "Okej, przypomnę ci następnym razem, jeśli zmienisz zdanie :D"
 			}
 		}
 	}

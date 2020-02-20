@@ -37,18 +37,18 @@
 	"notifications": {
 		"cookies": {
 			"question_prop": {
-				"title": "Allow Cookies",
-				"text": "Our site uses cookies to improve your browsing experience, and your future visits, you want to allow cookies usage?",
-				"allow_text": "Yes, Why not!",
-				"dissmis_text": "No Thanks, I'm fine"
+				"title": "Cookies zulassen",
+				"text": "Unsere Website verwendet Cookies, um Ihr Surferlebnis zu verbessern. Möchten Sie bei zukünftigen Besuchen die Verwendung von Cookies zulassen?",
+				"allow_text": "Ja, warum nicht!",
+				"dissmis_text": "Nein Danke, mir geht es gut"
 			},
 			"allowed_prop": {
-				"title": "Allowed",
-				"text": "Amazing!. Thank you, you will not see me next time ;)"
+				"title": "Statthaft",
+				"text": "Tolle!. Danke, du wirst mich das nächste Mal nicht sehen ;)"
 			},
 			"disallowed_prop": {
-				"title": "Disallowed",
-				"text": "Okay, I'll remind you next time, if you change your mind :D"
+				"title": "Ungültig",
+				"text": "Okay, ich werde dich das nächste Mal daran erinnern, wenn du es dir anders überlegst :D."
 			}
 		}
 	}
