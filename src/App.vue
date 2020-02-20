@@ -1,6 +1,9 @@
 <template>
 	<div id="app">
 		<app-navbar></app-navbar>
+		<a id="return-to-top" data-scroll href="#">
+			<i class="fas fa-chevron-up"></i>
+		</a>
 		<router-view></router-view>
 		<app-footer></app-footer>
 	</div>

@@ -1,7 +1,7 @@
 <template>
 	<div id="appNav">
 		<!-- Image and text -->
-		<b-navbar type="dark" variant="dark" :fixed="'top'" :toggleable="'md'">
+		<b-navbar class="bg-bk" type="dark" :fixed="'top'" :toggleable="'md'">
 			<b-navbar-brand :to="{ name: 'Home' }">
 				<img
 					src="@/assets/img/unity-logo_light.svg"
@@ -17,8 +17,10 @@
 
 			<b-collapse id="nav-collapse" is-nav>
 				<b-navbar-nav class="text-center">
-					<b-nav-item href="#">Link</b-nav-item>
-					<b-nav-item href="#" disabled>Disabled</b-nav-item>
+					<b-nav-item :to="{ name: 'Home' }">
+						<i class="fas fa-home"></i>
+						{{ $t('menus.home') }}
+					</b-nav-item>
 				</b-navbar-nav>
 
 				<!-- Right aligned nav items -->
@@ -33,11 +35,11 @@
 							@select="selectLang"
 						>
 							<template slot="singleLabel" slot-scope="props">
-								<span class="flag-icon " :class="[`flag-icon-${props.option.flag}`]"> </span>
+								<span class="flag-icon" :class="[`flag-icon-${props.option.flag}`]"></span>
 								{{ props.option.text }}
 							</template>
 							<template slot="option" slot-scope="props">
-								<span class="flag-icon " :class="[`flag-icon-${props.option.flag}`]"> </span>
+								<span class="flag-icon" :class="[`flag-icon-${props.option.flag}`]"></span>
 								{{ props.option.text }}
 							</template>
 						</multi-select>

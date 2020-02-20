@@ -1,5 +1,5 @@
 <template>
-	<footer id="appFooter" class="container-fluid bg-dark py-5">
+	<footer id="appFooter" class="container-fluid bg-bk py-5">
 		<div class="row justify-content-center py-2">
 			<div class="col-md-4 col-sm-12">
 				<h3 class="text-center animated fadeInLeft slow">
@@ -26,14 +26,12 @@
 				</h3>
 			</div>
 			<div class="col-md-8 col-sm-12 my-5">
-				<h4 class="text-muted text-center animated fadeInDown slow">Copyright GTA-ASM &copy; 2020</h4>
+				<h4 class="text-white text-center animated fadeInDown slow">Copyright GTA-ASM &copy; 2020</h4>
 			</div>
 		</div>
 		<div class="row justify-content-center py-3 px-2">
 			<div class="col-md-8 col-sm-12">
-				<h5 class="text-muted text-center animated fadeInDown slow">
-					{{ $t('menus.footer.legal') }}
-				</h5>
+				<h5 class="text-muted text-center animated fadeInDown slow">{{ $t('menus.footer.legal') }}</h5>
 			</div>
 		</div>
 	</footer>
