@@ -11,5 +11,5 @@ module.exports = {
 	runtimeCompiler: true,
 	outputDir: 'docs',
 	assetsDir: 'assets',
-	publicPath: '/gtasa_unity_website/',
+	publicPath: '',
 };
