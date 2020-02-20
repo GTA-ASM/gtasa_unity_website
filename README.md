@@ -4,13 +4,14 @@
 <div align="center">
     <img src="https://i.imgur.com/aIojfPW.png" width="320" height="320">
     <br>
-	<img alt="GitHub" src="https://img.shields.io/github/license/GTA-ASM/gta-asm.github.io.svg?style=for-the-badge">
+	<img alt="GitHub" src="https://img.shields.io/github/license/GTA-ASM/gtasa_unity_website?style=for-the-badge">
     <a href="https://discord.gg/p6jjud5"> <img alt="Discord" src="https://img.shields.io/discord/454006273751515152.svg?style=for-the-badge"></a>
     &nbsp;
     <a href="https://gtaforums.com/topic/912395-san-andreas-unity/"> <img src="http://i.imgur.com/Fatp2jZ.png" width="50" height="30"></a>
     &nbsp;
     <a href="https://www.youtube.com/channel/UCsslP7vqD06AMh6JlEy0pkg"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/71px-YouTube_full-color_icon_%282017%29.svg.png" width="30" height="30"> </a>
-	<img alt="David (path)" src="https://img.shields.io/david/dev/GTA-ASM/gta-asm.github.io.svg?style=for-the-badge">
+	<img alt="David (path)" src="https://img.shields.io/david/dev/GTA-ASM/gtasa_unity_website.svg?style=for-the-badge">
+    <img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=Offline&style=for-the-badge&up_color=green&up_message=Online&url=https%3A%2F%2Fgta-asm.github.io%2Fgtasa_unity_website%2F">
 </div>
 <br>
 
