@@ -33,5 +33,23 @@
 			"youtube": "Besuchen Sie unseren Youtube-Kanal !",
 			"legal": "GTA ASM repräsentiert weder Rockstar Games noch einen seiner Partner oder Franchiseunternehmen; es verteilt oder fördert nicht die Verteilung von Material außerhalb der Regeln für die Verteilung von Spielen und/oder Rockstar Games-Material."
 		}
+	},
+	"notifications": {
+		"cookies": {
+			"question_prop": {
+				"title": "Allow Cookies",
+				"text": "Our site uses cookies to improve your browsing experience, and your future visits, you want to allow cookies usage?",
+				"allow_text": "Yes, Why not!",
+				"dissmis_text": "No Thanks, I'm fine"
+			},
+			"allowed_prop": {
+				"title": "Allowed",
+				"text": "Amazing!. Thank you, you will not see me next time ;)"
+			},
+			"disallowed_prop": {
+				"title": "Disallowed",
+				"text": "Okay, I'll remind you next time, if you change your mind :D"
+			}
+		}
 	}
 }

@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import _ from 'lodash';
 
 Vue.use(Vuex);
 
@@ -19,8 +20,16 @@ export default new Vuex.Store({
 		},
 	},
 	actions: {
-		selectLang({ commit }, lang) {
-			commit('setLang', lang);
+		selectLang({ commit }, lang: string | object) {
+			if (typeof lang !== 'object') {
+				const fLang =
+					_.find(this.state.langs, { code: lang }) !== undefined
+						? (_.find(this.state.langs, { code: lang }) as object)
+						: { code: 'en', flag: 'us', text: 'English' };
+				commit('setLang', fLang);
+			} else {
+				commit('setLang', lang);
+			}
 		},
 	},
 	getters: {
