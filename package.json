@@ -20,7 +20,7 @@
 		"font-awesome": "^4.7.0",
 		"jquery": "^3.4.1",
 		"js-cookie": "^2.2.1",
-		"lodash": "^4.17.15",
+		"lodash": "^4.17.19",
 		"plyr": "^3.5.10",
 		"smooth-scroll": "^16.1.2",
 		"sweetalert2": "^9.7.2",
